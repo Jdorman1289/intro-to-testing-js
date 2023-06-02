@@ -14,6 +14,7 @@ describe('helloWorld', function () {
     });
 });
 
+// Unit tests for the sayHello function
 describe('sayHello', function () {
     it('should be a defined function', function () {
         expect(typeof sayHello).toBe('function');
@@ -29,5 +30,14 @@ describe('sayHello', function () {
     });
     it('should return the phrase "Hello, Pat!"', function () {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
+    });
+    it('should return the phrase "Hello, World!" by default.', function () {
+        expect(sayHello()).toBe("Hello, World!");
+    });
+    it('should return the phrase "Hello, World!" when true is passed.', function () {
+        expect(sayHello(true)).toBe("Hello, World!");
+    });
+    it('should return the phrase "Hello, World!" when false is passed', function () {
+        expect(sayHello(false)).toBe("Hello, World!");
     });
 });
