@@ -16,3 +16,14 @@ function sayHello(userName) {
 function isFive(input) {
     return parseFloat(input) === 5;
 }
+
+function isEven(input) {
+    if (typeof input === "boolean") {
+        return false;
+    } else if (input < 0) {
+        input = Math.abs(input);
+    }
+    if (input === 2) {
+        return true;
+    } else return input % 2 === 0;
+}
