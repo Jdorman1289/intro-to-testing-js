@@ -27,3 +27,16 @@ function isEven(input) {
         return true;
     } else return input % 2 === 0;
 }
+
+function isVowel(input) {
+    const vowelsList = ["a", "e", "i", "o", "u"];
+    if (typeof input === "undefined") {
+        return false;
+    } else if (parseFloat(input)) {
+        return false;
+    } else if (typeof input === "boolean") {
+        return false;
+    } else {
+        return vowelsList.includes(input.toLowerCase());
+    }
+}
