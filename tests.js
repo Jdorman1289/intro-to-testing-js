@@ -41,3 +41,19 @@ describe('sayHello', function () {
         expect(sayHello(false)).toBe("Hello, World!");
     });
 });
+
+describe('isFive', function () {
+    it('should be a defined function', function () {
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return true if the input is the number five', function () {
+        expect(isFive(5)).toBe(true);
+    });
+    it('should return false if the input is not a number', function () {
+        expect(isFive("bro")).toBe(false);
+        expect(isFive("apple")).toBe(false);
+    });
+    it('should return true if the input is the numeric string "5"', function () {
+        expect(isFive("5")).toBe(true);
+    });
+})

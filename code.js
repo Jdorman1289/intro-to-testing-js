@@ -12,3 +12,7 @@ function sayHello(userName) {
         return `Hello, ${userName}!`;
     }
 }
+
+function isFive(input) {
+    return parseFloat(input) === 5;
+}
