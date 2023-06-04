@@ -40,3 +40,11 @@ function isVowel(input) {
         return vowelsList.includes(input.toLowerCase());
     }
 }
+
+function add(value1, value2) {
+    if (isNaN(parseFloat(value1) + parseFloat(value2))) {
+        return "NaN";
+    } else {
+        return parseFloat(value1) + parseFloat(value2)
+    }
+}
